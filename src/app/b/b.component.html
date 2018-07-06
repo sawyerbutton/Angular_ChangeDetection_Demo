@@ -1,5 +1,5 @@
-<h2>B 组件的id属性 {{this.id}}</h2>
-<h2>B 组件的name属性 {{this.name}}</h2>
+<h2 (domChange)="onDomChange($event)">B 组件的id属性 {{this.id}}</h2>
+<h2 (domChange)="onDomChange($event)">B 组件的name属性 {{this.name}}</h2>
 <br>
 <h3>Component C 的状况</h3>
 <app-c></app-c>

@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h2>{{title}}</h2>
-<h3>A 组件的属性id:{{data.id}},name:{{data.name}}</h3>
+<h3 (domChange)="onDomChange($event)">A 组件的属性id:{{data.id}},name:{{data.name}}</h3>
+<button (click)="changeData()">手动更改A组件data的值,10s后自动更改</button>
 <br>
 <h2>组件 B 的状况</h2>
 <app-b [data]="data"></app-b>

@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BComponent } from './b/b.component';
 import { CComponent } from './c/c.component';
+import { DomChangeDirective } from './dom-change.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BComponent,
-    CComponent
+    CComponent,
+    DomChangeDirective
   ],
   imports: [
     BrowserModule
