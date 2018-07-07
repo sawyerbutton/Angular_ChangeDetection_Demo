@@ -11,7 +11,7 @@ export class ChildComponent implements OnInit, AfterViewInit {
   constructor(private parent: ParentComponent) { }
 
   ngOnInit() {
-    // this.parent.text = '修改后的信息';
+    this.parent.text = '修改后的信息';
     // 如果我们同样也对name属性进行变更，
     // this.parent.name = '修改后的名称';
     // setTimeout(() => {
@@ -20,8 +20,8 @@ export class ChildComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // this.parent.name = '修改后的名称';
-    Promise.resolve(null).then(() => this.parent.name = '修改后的名称');
+    this.parent.name = '修改后的名称';
+    // Promise.resolve(null).then(() => this.parent.name = '修改后的名称');
     // setTimeout(() => {
     //   this.parent.name = '修改后的名称';
     // });
