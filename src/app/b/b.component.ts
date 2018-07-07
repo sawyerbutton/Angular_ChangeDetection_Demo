@@ -4,6 +4,7 @@ import {ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, Input, O
   selector: 'app-b',
   templateUrl: './b.component.html',
   styleUrls: ['./b.component.css'],
+  // onPush 策略应用与B组件
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BComponent implements DoCheck, OnInit, OnChanges {
