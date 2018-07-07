@@ -17,10 +17,11 @@ import { calls } from './support';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements DoCheck {
+  // 在ngDoCheck生命周期钩子中push当前组件的名称进入log服务中的ngDoCheck部分
   ngDoCheck() {
     calls.ngDoCheck.push('A');
   }
-
+  // 同时在本组件中调用自己的方法 pus当前组件到 log服务中的渲染部分
   addRender() {
     calls.render.push('A');
   }
